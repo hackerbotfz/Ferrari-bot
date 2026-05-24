@@ -1,0 +1,86 @@
+# Ferrari Knowledge Base - First Order Logic (NLTK FOL syntax)
+# Facts and rules about Ferrari models, categories, and properties
+# Format: CamelCase predicates, underscore-separated individuals
+
+#Model classifications
+RoadCar(SF90)
+RoadCar(F80)
+RoadCar(Ferrari_296)
+RoadCar(Roma)
+RoadCar(Ferrari_812)
+RoadCar(Ferrari_12Cilindri)
+RacingCar(Ferrari_499P)
+RacingCar(Ferrari_SF25)
+RacingCar(Ferrari_SF24)
+ConceptCar(Vision_Gran_Turismo)
+
+#Powertrain types
+Hybrid(SF90)
+Hybrid(F80)
+Hybrid(Ferrari_296)
+Hybrid(Ferrari_499P)
+NaturallyAspirated(Ferrari_812)
+NaturallyAspirated(Ferrari_12Cilindri)
+V12(Ferrari_812)
+V12(Ferrari_12Cilindri)
+V8(SF90)
+V6(F80)
+V6(Ferrari_296)
+V6(Ferrari_499P)
+
+#Performance tier
+Hypercar(F80)
+Hypercar(SF90)
+Supercar(Ferrari_296)
+Supercar(Ferrari_812)
+GrandTourer(Roma)
+GrandTourer(Ferrari_12Cilindri)
+Formula1Car(Ferrari_SF25)
+Formula1Car(Ferrari_SF24)
+EnduranceRacer(Ferrari_499P)
+
+#Manufacturer
+MadeByFerrari(SF90)
+MadeByFerrari(F80)
+MadeByFerrari(Ferrari_296)
+MadeByFerrari(Roma)
+MadeByFerrari(Ferrari_812)
+MadeByFerrari(Ferrari_12Cilindri)
+MadeByFerrari(Ferrari_499P)
+MadeByFerrari(Ferrari_SF25)
+MadeByFerrari(Ferrari_SF24)
+Italian(Ferrari)
+
+#Rules
+# All Ferrari road cars are expensive
+all x.(RoadCar(x) -> Expensive(x))
+
+# All hypercars are road cars
+all x.(Hypercar(x) -> RoadCar(x))
+
+# All hypercars are fast
+all x.(Hypercar(x) -> Fast(x))
+
+# All supercars are also fast
+all x.(Supercar(x) -> Fast(x))
+
+# All grand tourers are road cars
+all x.(GrandTourer(x) -> RoadCar(x))
+
+# All hybrid cars have an electric motor
+all x.(Hybrid(x) -> HasElectricMotor(x))
+
+# Racing cars are not road cars
+all x.(RacingCar(x) -> -RoadCar(x))
+
+# All cars made by Ferrari are Italian in origin
+all x.(MadeByFerrari(x) -> ItalianMade(x))
+
+# All Formula 1 cars are racing cars
+all x.(Formula1Car(x) -> RacingCar(x))
+
+# All endurance racers are racing cars
+all x.(EnduranceRacer(x) -> RacingCar(x))
+
+# Naturally aspirated engines have no turbocharger
+all x.(NaturallyAspirated(x) -> -Turbocharged(x))

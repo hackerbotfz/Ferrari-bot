@@ -1,0 +1,195 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category> <pattern> HELLO </pattern>
+  <template>Hey! Welcome to FerrariBot. Ask me anything about Ferrari — models, specs, history, F1, you name it.</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>Running at full throttle, thanks. What Ferrari question can I answer for you?</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>Good to hear. What would you like to know about Ferrari?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Take it easy. Forza Ferrari!</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>No problem at all.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Anytime.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Anytime.</template></category>
+
+<category><pattern> WHAT IS A * </pattern>
+  <template>#1$<star index="1"/></template></category>
+
+<category><pattern> WHAT IS AN * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHAT IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> DEFINE * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<category><pattern> WHO IS * </pattern>
+  <template><srai>WHAT IS A <star/></srai></template></category>
+
+<!-- Pattern 1: Ferrari overview -->
+<category><pattern> TELL ME ABOUT FERRARI </pattern>
+  <template>Ferrari is an Italian luxury sports car manufacturer based in Maranello, founded by Enzo Ferrari in 1939. They are one of the most iconic automotive brands in the world, famous for high-performance road cars, Formula 1 dominance, and the prancing horse badge. Ferrari produces around 14,000 cars a year — deliberately limited to maintain exclusivity. Every model is built by hand at their Maranello factory.</template></category>
+
+<category><pattern> FERRARI </pattern>
+  <template><srai>TELL ME ABOUT FERRARI</srai></template></category>
+
+<category><pattern> WHAT IS FERRARI </pattern>
+  <template><srai>TELL ME ABOUT FERRARI</srai></template></category>
+
+<!-- Pattern 2: Ferrari SF90 -->
+<category><pattern> FERRARI SF90 </pattern>
+  <template>The Ferrari SF90 Stradale is Ferrari's most powerful road car to date — a plug-in hybrid producing 986 hp from a twin-turbo 4.0L V8 combined with three electric motors. It does 0-62 mph in 2.5 seconds and tops out at 211 mph. The name references Ferrari's 90th anniversary in Formula 1. The SF90 XX Stradale, released in 2024, pushes output even further to 1,016 hp.</template></category>
+
+<category><pattern> TELL ME ABOUT THE SF90 </pattern>
+  <template><srai>FERRARI SF90</srai></template></category>
+
+<category><pattern> SF90 </pattern>
+  <template><srai>FERRARI SF90</srai></template></category>
+
+<!-- Pattern 3: Ferrari F80 -->
+<category><pattern> FERRARI F80 </pattern>
+  <template>The Ferrari F80 is Ferrari's current hypercar flagship, revealed in 2024. It produces 1,200 hp from a hybrid V6 system borrowed from Ferrari's Le Mans programme and does 0-62 mph in under 2.15 seconds. Only 799 units will be built, each priced at around 3.6 million euros. It replaces the LaFerrari at the top of Ferrari's road car lineup and is the most advanced Ferrari ever put into production.</template></category>
+
+<category><pattern> TELL ME ABOUT THE F80 </pattern>
+  <template><srai>FERRARI F80</srai></template></category>
+
+<category><pattern> F80 </pattern>
+  <template><srai>FERRARI F80</srai></template></category>
+
+<!-- Pattern 4: Ferrari 296 -->
+<category><pattern> FERRARI 296 </pattern>
+  <template>The Ferrari 296 GTB is a mid-engined plug-in hybrid powered by a twin-turbo 3.0L V6 paired with an electric motor, producing 818 hp combined. It replaced the F8 Tributo. The 296 Speciale, revealed in 2025, is the lightweight track-focused version with 880 hp. The name refers to the 2,992cc displacement and 6-cylinder configuration.</template></category>
+
+<category><pattern> TELL ME ABOUT THE 296 </pattern>
+  <template><srai>FERRARI 296</srai></template></category>
+
+<category><pattern> 296 GTB </pattern>
+  <template><srai>FERRARI 296</srai></template></category>
+
+<!-- Pattern 5: Ferrari Roma -->
+<category><pattern> FERRARI ROMA </pattern>
+  <template>The Ferrari Roma is a front-engined grand tourer that debuted in 2019. It uses a twin-turbo 3.9L V8 producing 612 hp. It is designed to be a more understated, elegant Ferrari — inspired by the dolce vita era of 1950s Rome. The Roma Spider convertible arrived in 2023 with the same powertrain and a retractable hardtop.</template></category>
+
+<category><pattern> TELL ME ABOUT THE ROMA </pattern>
+  <template><srai>FERRARI ROMA</srai></template></category>
+
+<category><pattern> ROMA </pattern>
+  <template><srai>FERRARI ROMA</srai></template></category>
+
+<!-- Pattern 6: Ferrari 812 -->
+<category><pattern> FERRARI 812 </pattern>
+  <template>The Ferrari 812 Superfast is a front-engined grand tourer powered by a naturally aspirated 6.5L V12 producing 789 hp — the most powerful NA V12 Ferrari put in a road car at the time. It does 0-62 mph in 2.9 seconds. The 812 Competizione is the hardcore limited variant with 830 hp. Ferrari has since replaced it with the 12Cilindri, but the 812 V12 is widely regarded as one of the greatest engines ever built.</template></category>
+
+<category><pattern> TELL ME ABOUT THE 812 </pattern>
+  <template><srai>FERRARI 812</srai></template></category>
+
+<category><pattern> 812 SUPERFAST </pattern>
+  <template><srai>FERRARI 812</srai></template></category>
+
+<!-- Pattern 7: Ferrari 12Cilindri -->
+<category><pattern> FERRARI 12CILINDRI </pattern>
+  <template>The Ferrari 12Cilindri is Ferrari's current flagship V12 grand tourer, revealed in 2024 as the successor to the 812 Superfast. It uses a naturally aspirated 6.5L V12 producing 830 hp. Available as both a coupe and Spider convertible. The name literally means 12 cylinders — Ferrari doubling down on their V12 heritage at a time when most manufacturers are moving toward electrification.</template></category>
+
+<category><pattern> TELL ME ABOUT THE 12CILINDRI </pattern>
+  <template><srai>FERRARI 12CILINDRI</srai></template></category>
+
+<category><pattern> 12CILINDRI </pattern>
+  <template><srai>FERRARI 12CILINDRI</srai></template></category>
+
+<!-- Pattern 8: Ferrari Formula 1 -->
+<category><pattern> FERRARI FORMULA 1 </pattern>
+  <template>Ferrari is the most successful constructor in Formula 1 history with 16 Constructors' Championships. Their team, Scuderia Ferrari, has been on the grid since the very first F1 season in 1950. Michael Schumacher won five consecutive titles with Ferrari from 2000 to 2004. Current cars are the SF-24 (2024) and SF-25 (2025). Ferrari's V6 hybrid era has seen them competing closely with Red Bull and Mercedes.</template></category>
+
+<category><pattern> TELL ME ABOUT FERRARI F1 </pattern>
+  <template><srai>FERRARI FORMULA 1</srai></template></category>
+
+<category><pattern> SCUDERIA FERRARI </pattern>
+  <template><srai>FERRARI FORMULA 1</srai></template></category>
+
+<!-- Pattern 9: Ferrari 499P / Endurance Racing -->
+<category><pattern> FERRARI 499P </pattern>
+  <template>The Ferrari 499P is Ferrari's Le Mans Hypercar for endurance racing, returning to top-level prototype racing after decades away. It uses a twin-turbo 3.0L V6 hybrid producing around 680 hp. The 499P won the 24 Hours of Le Mans in both 2023 and 2024 — Ferrari's first Le Mans overall win since 1965. The 499P Modificata is a road-legal track-only version for private collectors.</template></category>
+
+<category><pattern> TELL ME ABOUT THE 499P </pattern>
+  <template><srai>FERRARI 499P</srai></template></category>
+
+<category><pattern> LE MANS FERRARI </pattern>
+  <template><srai>FERRARI 499P</srai></template></category>
+
+<!-- Pattern 10: Ferrari LaFerrari -->
+<category><pattern> LAFERRARI </pattern>
+  <template>The LaFerrari was Ferrari's flagship hypercar from 2013, the predecessor to the F80. It combined a 6.3L NA V12 with a HY-KERS electric motor for a combined 949 hp. Only 499 coupes and 210 Apertas were built. It was so oversubscribed that Ferrari reportedly turned away buyers who had only one or two Ferraris in their garage. Current prices on the used market sit above 3.5 million pounds.</template></category>
+
+<category><pattern> TELL ME ABOUT THE LAFERRARI </pattern>
+  <template><srai>LAFERRARI</srai></template></category>
+
+<!-- Pattern 11: Ferrari history -->
+<category><pattern> FERRARI HISTORY </pattern>
+  <template>Ferrari was founded by Enzo Ferrari in 1939 as Auto Avio Costruzioni. The first car to bear the Ferrari name was the 125 S in 1947. Enzo sold a 50% stake to Fiat in 1969 to keep the company solvent. He died in 1988 before the F40 launched — a car he commissioned as his final gift to fans. Ferrari went public on the New York Stock Exchange in 2015 and is now one of the most valuable automotive brands in the world.</template></category>
+
+<category><pattern> HISTORY OF FERRARI </pattern>
+  <template><srai>FERRARI HISTORY</srai></template></category>
+
+<category><pattern> WHO FOUNDED FERRARI </pattern>
+  <template><srai>FERRARI HISTORY</srai></template></category>
+
+<!-- Pattern 12: Ferrari Novitec -->
+<category><pattern> NOVITEC FERRARI </pattern>
+  <template>Novitec is a German tuning company specialising in Ferrari modifications, offering engine upgrades, suspension tuning, custom bodywork, and bespoke interiors. For the 296 GTB, Novitec developed the N-Largo wide-body kit with carbon fibre panels and boosted output beyond the factory 818 hp. Novitec is one of the most respected names in the Ferrari aftermarket world.</template></category>
+
+<category><pattern> NOVITEC </pattern>
+  <template><srai>NOVITEC FERRARI</srai></template></category>
+
+<!-- Pattern 13: Fastest Ferrari -->
+<category><pattern> FASTEST FERRARI </pattern>
+  <template>The Ferrari F80 is the fastest-accelerating Ferrari ever made, doing 0-62 mph in under 2.15 seconds. For top speed, the SF90 XX Stradale and F80 both exceed 200 mph. Historically the Enzo and LaFerrari held that title in their eras. The F80's hybrid V6 system is derived directly from the 499P Le Mans prototype.</template></category>
+
+<category><pattern> WHAT IS THE FASTEST FERRARI </pattern>
+  <template><srai>FASTEST FERRARI</srai></template></category>
+
+<!-- Pattern 14: Ferrari Tailor Made -->
+<category><pattern> FERRARI TAILOR MADE </pattern>
+  <template>Ferrari Tailor Made is Ferrari's bespoke personalisation programme, letting customers specify virtually any colour, material, or finish for their car. It goes far beyond the standard options list. The SP Special Projects programme takes it even further — entirely one-off cars built to a single customer's brief, like the SP-8 and KC23.</template></category>
+
+<category><pattern> WHAT IS TAILOR MADE </pattern>
+  <template><srai>FERRARI TAILOR MADE</srai></template></category>
+
+<!-- Pattern 15: Ferrari vs Lamborghini -->
+<category><pattern> FERRARI VS LAMBORGHINI </pattern>
+  <template>The rivalry goes back to the 1960s when Ferruccio Lamborghini, frustrated with Enzo Ferrari's dismissiveness, set up his own company. Today Ferrari focuses more on driving dynamics and racing heritage, while Lamborghini leans into dramatic styling and theatre. Ferrari's hybrid tech in the SF90 and F80 is arguably more advanced. Lamborghini's Revuelto and Urus give them a broader lineup. Ferrari is an independent company; Lamborghini is part of the VW Group.</template></category>
+
+<category><pattern> FERRARI OR LAMBORGHINI </pattern>
+  <template><srai>FERRARI VS LAMBORGHINI</srai></template></category>
+
+<category><pattern> * </pattern>
+  <template>#99$<star index="1"/></template></category>
+
+</aiml>
